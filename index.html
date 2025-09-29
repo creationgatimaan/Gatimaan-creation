@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatimaan creation</title>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">
+          <img id="site-logo" alt="Gatimaan creation Logo" src="https://via.placeholder.com/64x64.png?text=G"/>
+          <span id="site-title-text">Gatimaan creation</span>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <span id="site-tagline" class="mdl-typography--caption">Handcrafted Stone & Marble Statues</span>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Hero with centered logo -->
+        <section id="hero" class="hero">
+          <div class="hero-glass">
+            <img id="hero-logo" alt="Gatimaan creation Logo" src="https://via.placeholder.com/200x200.png?text=G"/>
+          </div>
+        </section>
+
+        <!-- Home View -->
+        <section id="home-view" class="view active">
+          <div id="category-chips" class="chips"></div>
+          <div id="products-grid" class="mdl-grid products-grid"></div>
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+              <div id="about-us" class="mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">About Us</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <p>At Gatimaan creation, we believe in the unique blend of artistry and devotion. Our mission is not just to create idols, but to breathe life into them. Every single idol is crafted from the purest stone, reflecting years of experience and the unwavering dedication of our master artisans.</p>
+
+                  <h4 class="mdl-typography--title">Our Artistic Process</h4>
+                  <p>The creation of each idol is a long and meticulous process that involves several stages:</p>
+                  <ol>
+                    <li><strong>Stone Selection:</strong> Our work begins with the careful selection of the finest marble. We use various types of stones, including Vietnam White Marble, Makrana Marble, Ambaji Marble, Rajnagar Marble, Black Marble, and Red Marble. Each stone has its own unique beauty and character that shines through in the final piece.</li>
+                    <li><strong>Block Cutting:</strong> The chosen stone is first cut into large blocks, sized according to the idol's specific dimensions.</li>
+                    <li><strong>Sketching &amp; Design:</strong> Our skilled artisans then use pencils to meticulously draw the idol's design onto the stone block, paying close attention to every intricate detail.</li>
+                    <li><strong>Carving &amp; Shaping:</strong> Once the sketch is complete, the carving process begins. With precision tools, the stone is slowly and carefully shaped to bring the design to life.</li>
+                    <li><strong>Face Sculpting:</strong> The face is the most vital part of the idol. A specialized artist works on this stage to infuse the face with expression and a lifelike quality.</li>
+                    <li><strong>Polishing:</strong> To give the idol a smooth and shiny finish, it is polished multiple times, bringing out the stone's natural luster.</li>
+                    <li><strong>Painting &amp; Finishing:</strong> After polishing, the idol is painted with vibrant colors that further enhance its beauty and detailing.</li>
+                    <li><strong>Packaging &amp; Transport:</strong> Finally, the finished idol is carefully packaged to ensure it reaches you safely and without any damage. We take great care in arranging secure transportation.</li>
+                  </ol>
+
+                  <h4 class="mdl-typography--title">Why Choose Us?</h4>
+                  <ul>
+                    <li><strong>Purity &amp; Authenticity:</strong> We use only the highest quality, authentic stone, ensuring that your idol is not just beautiful but also sacred.</li>
+                    <li><strong>Artisan Craftsmanship:</strong> Our idols are not machine-made. They are handcrafted by a dedicated team of experienced artisans who pour their heart and soul into every piece.</li>
+                    <li><strong>Attention to Detail:</strong> From the initial sketch to the final polish, we focus on every minute detail to capture the divine essence of each deity.</li>
+                    <li><strong>Timeless Quality:</strong> An idol from Bhavya Darshan is a symbol of faith that will last for generations, becoming a treasured part of your family's legacy.</li>
+                  </ul>
+
+                  <h4 class="mdl-typography--title">Our Vision</h4>
+                  <p>Our vision is to become a bridge between divine artistry and devout homes. We aspire to bring a piece of spiritual heritage into every household, allowing people to connect with their faith on a deeper and more personal level. We believe that a beautifully crafted idol is more than just a statue—it's a source of peace, devotion, and inspiration.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Search View -->
+        <section id="search-view" class="view">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+              <form id="search-form" onsubmit="return false;" class="search-form">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                  <input class="mdl-textfield__input" type="text" id="search-input" aria-label="Search products">
+                  <label class="mdl-textfield__label" for="search-input">Search by name, category, or material...</label>
+                </div>
+              </form>
+              <div id="search-count" class="mdl-typography--caption"></div>
+            </div>
+            <div id="search-results" class="mdl-cell mdl-cell--12-col mdl-grid products-grid"></div>
+          </div>
+        </section>
+
+        <!-- Orders View -->
+        <section id="orders-view" class="view">
+          <div class="mdl-grid">
+            <div id="orders-list" class="mdl-cell mdl-cell--12-col orders-list"></div>
+          </div>
+        </section>
+
+        <!-- Profile View -->
+        <section id="profile-view" class="view">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Profile</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <form id="profile-form" onsubmit="return false;">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                        <input class="mdl-textfield__input" type="text" id="profile-name" required>
+                        <label class="mdl-textfield__label" for="profile-name">Full Name</label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                        <input class="mdl-textfield__input" type="email" id="profile-email" required>
+                        <label class="mdl-textfield__label" for="profile-email">Email Address</label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                        <input class="mdl-textfield__input" type="tel" id="profile-phone" required>
+                        <label class="mdl-textfield__label" for="profile-phone">Mobile Number</label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                        <textarea class="mdl-textfield__input" id="profile-address" rows="3" required></textarea>
+                        <label class="mdl-textfield__label" for="profile-address">Current Address</label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                        <textarea class="mdl-textfield__input" id="profile-notes" rows="3"></textarea>
+                        <label class="mdl-textfield__label" for="profile-notes">Notes (optional)</label>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <span id="profile-completeness" class="mdl-typography--caption"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <button id="save-profile-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                  Save Profile
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav id="bottom-nav" class="bottom-nav">
+      <button class="nav-item active" data-view="home-view" aria-label="Home">
+        <i class="material-icons" aria-hidden="true">home</i>
+        <span>Home</span>
+      </button>
+      <button class="nav-item" data-view="search-view" aria-label="Search">
+        <i class="material-icons" aria-hidden="true">search</i>
+        <span>Search</span>
+      </button>
+      <button class="nav-item" data-view="orders-view" aria-label="Orders">
+        <i class="material-icons" aria-hidden="true">receipt</i>
+        <span>Orders</span>
+      </button>
+      <button class="nav-item" data-view="profile-view" aria-label="Profile">
+        <i class="material-icons" aria-hidden="true">person</i>
+        <span>Profile</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="auth-modal-title">
+    <div class="modal__content mdl-shadow--4dp">
+      <div class="modal__header">
+        <h4 id="auth-modal-title">Welcome</h4>
+      </div>
+      <div class="modal__body">
+        <div id="auth-tabs" class="auth-tabs" style="display:flex;gap:8px;margin-bottom:8px;">
+          <button id="auth-tab-login" type="button" class="chip active">Login</button>
+          <button id="auth-tab-signup" type="button" class="chip">Sign Up</button>
+        </div>
+
+        <form id="auth-login-form" onsubmit="return false;" class="full-width">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+            <input class="mdl-textfield__input" type="email" id="auth-login-email" required>
+            <label class="mdl-textfield__label" for="auth-login-email">Email Address</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+            <input class="mdl-textfield__input" type="password" id="auth-login-pass" required>
+            <label class="mdl-textfield__label" for="auth-login-pass">Password</label>
+          </div>
+        </form>
+
+        <form id="auth-signup-form" onsubmit="return false;" class="full-width" style="display:none;">
+          <div class="mdl-grid" style="padding:0;">
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                <input class="mdl-textfield__input" type="text" id="auth-name" required>
+                <label class="mdl-textfield__label" for="auth-name">Full Name</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                <input class="mdl-textfield__input" type="email" id="auth-email" required>
+                <label class="mdl-textfield__label" for="auth-email">Email Address</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                <input class="mdl-textfield__input" type="tel" id="auth-phone" required>
+                <label class="mdl-textfield__label" for="auth-phone">Mobile Number</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                <textarea class="mdl-textfield__input" id="auth-address" rows="2" required></textarea>
+                <label class="mdl-textfield__label" for="auth-address">Current Address</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                <input class="mdl-textfield__input" type="password" id="auth-pass" required>
+                <label class="mdl-textfield__label" for="auth-pass">Password (min 8 chars)</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                <input class="mdl-textfield__input" type="password" id="auth-pass2" required>
+                <label class="mdl-textfield__label" for="auth-pass2">Confirm Password</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <button id="auth-login-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Login</button>
+        <button id="auth-signup-btn" class="mdl-button mdl-js-button mdl-button--raised" style="display:none;">Create Account</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Modal -->
+  <div id="order-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="order-modal-title">
+    <div class="modal__content mdl-shadow--4dp">
+      <div class="modal__header">
+        <h4 id="order-modal-title">Place Order</h4>
+        <button id="order-modal-close" class="mdl-button mdl-js-button mdl-button--icon" aria-label="Close">
+          <i class="material-icons" aria-hidden="true">close</i>
+        </button>
+      </div>
+      <div class="modal__body">
+        <div id="order-product-preview" class="order-product-preview"></div>
+        <form id="order-form" onsubmit="return false;">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+            <input class="mdl-textfield__input" type="text" id="order-name" required>
+            <label class="mdl-textfield__label" for="order-name">Full Name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+            <textarea class="mdl-textfield__input" id="order-address" rows="3" required></textarea>
+            <label class="mdl-textfield__label" for="order-address">Current Address</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+            <input class="mdl-textfield__input" type="tel" id="order-phone" required>
+            <label class="mdl-textfield__label" for="order-phone">Mobile Number</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+            <textarea class="mdl-textfield__input" id="order-notes" rows="2"></textarea>
+            <label class="mdl-textfield__label" for="order-notes">Special Notes (optional)</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <button id="submit-order-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Place Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Snackbar -->
+  <div id="snackbar" class="mdl-js-snackbar mdl-snackbar" aria-live="assertive" aria-atomic="true" aria-relevant="text">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
